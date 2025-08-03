@@ -1,0 +1,32 @@
+{
+  "literature-review": {
+    "prompt": "Conduct a systematic literature review using CS197 paper outlining methodology. For each paper: (1) Problem - What problem does it solve? (2) Prior assumptions - What did earlier work assume? (3) Insight - What's the novel contribution? (4) Technical approach - How is it implemented? (5) Evaluation - How was it validated? (6) Impact - What are the implications? Use Semantic Scholar and Exa to find related papers and verify citations.",
+    "mcp_tools": ["semantic-scholar", "exa-search", "filesystem", "github"],
+    "focus_areas": [
+      "Comprehensive coverage of the research area",
+      "Identification of research gaps",
+      "Clear paper summaries using CS197 structure",
+      "Proper citation formatting",
+      "Synthesis of common themes and assumptions"
+    ]
+  },
+  "idea-generation": {
+    "prompt": "Generate and evaluate research ideas based on identified gaps. For each idea: (1) Identify the 'bit' (assumption) to flip, (2) Articulate the novel angle, (3) Assess feasibility, (4) Estimate impact, (5) Check for prior work using Exa search. Focus on ideas that are both novel and implementable within the project scope.",
+    "mcp_tools": ["exa-search", "filesystem", "github"],
+    "brainstorming_framework": {
+      "bit_flip_template": "Prior work assumes X → We propose Y → This matters because Z"
+    }
+  },
+  "experiment-proposal": {
+    "prompt": "Design a rigorous experiment following CS197 evaluation principles. Include: (1) Clear thesis statement, (2) Testable hypotheses, (3) Dependent variables (what to measure), (4) Independent variables (what to manipulate), (5) Experimental tasks/procedures, (6) Validity threats and mitigations, (7) Required resources. Search for similar experimental designs in related work.",
+    "mcp_tools": ["exa-search", "filesystem", "github"]
+  },
+  "run-experiment": {
+    "prompt": "Review implementation of the experimental design. Verify: (1) Code correctly implements the proposed methodology, (2) Proper data collection and logging, (3) Reproducibility (seeds, configs, documentation), (4) Error handling and edge cases, (5) Test coverage for critical components. Use Exa to find implementation examples or libraries that might help.",
+    "mcp_tools": ["exa-search", "filesystem", "github"]
+  },
+  "analyze-experiment": {
+    "prompt": "Analyze experimental results with scientific rigor. Check: (1) Appropriate statistical methods used, (2) Clear, honest visualizations, (3) Valid interpretations of data, (4) Acknowledged limitations, (5) Conclusions directly tied to original hypotheses, (6) Unexpected findings explored. Compare results with predictions and related work.",
+    "mcp_tools": ["filesystem", "github"]
+  }
+}
